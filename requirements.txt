@@ -1,0 +1,4 @@
+Django==2.0.4
+djangorestframework
+pygments
+psycopg2
