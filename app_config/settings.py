@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'groups.apps.GroupsConfig',
+    # 'groups.apps.GroupsConfig',
+    'User',
+    'Event',
 ]
 
 MIDDLEWARE = [
@@ -77,11 +79,12 @@ WSGI_APPLICATION = 'app_config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gauntlet',
+        'USER': 'admin',
         'HOST': 'db',
-        'PORT': 5432,
+        'PORT': 3306,
+        'PASSWORD': 'password'
     }
 }
 
